@@ -1,5 +1,3 @@
-// A pesquisa binária é totalmente determinada em escalas logarítimicas. Enquanto a pesquisa linear pega de um em um, a pesquisa binária faz as coisas de outra forma!
-
 class BinaryPower {
     constructor (num) {
         this.num = num;
@@ -20,6 +18,57 @@ class BinaryPower {
 /* const power = new BinaryPower(4000000000);
 power.showThePower(); */
 
-// Na pesquisa binária: 100 itens => 7 palpites. Já 4.000.000.000 => 32 palpites; como vimos no exemplo acima. Logo, a pesquisa binária se mostra extremamente eficaz: por utilizar de um tempo de execução logarítmico.
+/*
+EXERCÍCIOS
+Forneça o tempo de execução para cada um dos casos a seguir em termos da
+notação Big O.
 
-// A notação Big O permite que você compare o número de operações. Ela informa o quão rapidamente um algoritmo cresce. No exemplo do Bob, vimos que a pesquisa simples cresceu de forma astrondosa; enquanto na pesquisa binária o tempo gasto foi muito, mas muito abaixo. 
+*/
+
+// Você tem um número de telefone e deseja encontrar o dono dele em uma agenda telefônica. (Dica: Deve procurar pela agenda inteira!)
+
+class wholeAgenda {
+    constructor (n) {
+        this.n = n;
+    }   
+
+    findData () {
+        while(this.n > 1) {
+            let poss = Math.floor(this.n--);
+            console.log(poss);
+        }
+    };
+    
+    showData () {
+        return this.findData();
+    };
+
+}
+
+/* const agendaValue = new wholeAgenda(1024);
+agendaValue.showData(); */
+
+// Tudo dependeria do número de telefones que existe na agenda. No caso, estamos considerando uma pesquisa simples. Logo, vamos ver 1024 termos até acharmos o que desejamos.
+
+// Você quer ler os números apenas dos nomes que começam com A. (Isso é complicado!);
+
+// 
+
+class fetchA {
+    async doingtheFetch () {
+        const aValue = await fetch("https://www.behindthename.com/names/letter/a");
+        const data = await aValue.json();
+        return data;
+    }
+
+    returnInpromises () {
+        this.doingtheFetch()
+        .then((waiting) => console.log(waiting))
+        .catch((err) => console.error(err));
+    }
+
+}
+
+/*const analysis = new fetchA();
+analysis.returnInpromises() */
+
