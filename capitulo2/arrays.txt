@@ -1,0 +1,15 @@
+Você está pronto para o show! É mais ou menos assim que a memória do
+seu computador funciona. O computador se parece com um grande
+conjunto de gavetas, e cada gaveta tem seu endereço.
+
+Cada vez que quer armazenar um item na memória, você pede ao
+computador um pouco de espaço e ele te dá um endereço no qual você pode
+armazenar o seu item. 
+
+Com as listas encadeadas você nunca precisa mover os seus itens; também
+evita outro problema. Digamos que você vá a um cinema famoso com os
+seus amigos. Vocês seis estão tentando procurar um lugar para sentar, mas o
+cinema está cheio. Não há seis lugares juntos. Bem, algumas vezes isso
+acontece com arrays. Imagine que está tentando encontrar 10.000 slots para
+um array. Sua memória tem 10.000 slots, mas eles não estão juntos. Você
+não consegue arrumar um lugar para o seu array! 
