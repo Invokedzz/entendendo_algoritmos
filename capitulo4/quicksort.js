@@ -11,8 +11,8 @@ class quickSort {
     }
 };
 
-/* const thinkAbout = new quickSort ();
-console.log(thinkAbout.creatinganArray_()); */
+const thinkAbout = new quickSort ();
+console.log(thinkAbout.creatinganArray_()); 
 
 class quickSort2 {
     creatinganotherArray_ () {
