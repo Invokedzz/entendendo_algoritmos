@@ -93,7 +93,18 @@ export class gsp {
     };
 }
 
-const gettingStarted = new gsp([]);
-gettingStarted.awd(['Brush my teeth', 'Breakfast', 'Take a shower']);
+//const gettingStarted = new gsp([]);
+//gettingStarted.awd(['Brush my teeth', 'Breakfast', 'Take a shower']);
+
+export class adjustingWords {
+
+    writingwithOrder (randomWord: string []): void {
+        const receiveaWord = [randomWord];
+        console.log(receiveaWord);
+    };
+};
+
+const analysis3 = new adjustingWords();
+analysis3.writingwithOrder(['ajoL']);
 
 export default 1;
