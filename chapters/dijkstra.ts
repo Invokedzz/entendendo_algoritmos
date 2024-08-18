@@ -1,5 +1,6 @@
 // Fazendo uma análise de complexidade do algoritmo de Dijkstra.
 
+// Uma forma de pensar na diferença do tempo entre caminhos distintos:
 export class firstPath {
     chooseCarefully () {
         return new Promise <void> ((resolve) => {
