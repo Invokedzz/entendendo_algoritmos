@@ -31,4 +31,24 @@ showIT.doingArray();
 showIT.otherThings();
 showIT.addingThings([]);
 
+class workingwithOperators {
+    constructor (
+        private nums: number [],
+    ) {};
+
+    doingtheCalc (): void {
+        let limit = 10;
+        this.nums = [1, 3, 7, 9, 11, 13];
+        const filtering = this.nums.filter((arrayList) => arrayList > 2);
+        for (let thinkAbout = 0; thinkAbout <= limit; thinkAbout++) {
+            let multiplication = filtering.map((filteredArray) => filteredArray * thinkAbout);
+            console.log(multiplication);
+        }
+    }
+
+}
+
+const creatingmoreArrays = new workingwithOperators([]);
+creatingmoreArrays.doingtheCalc();
+
 export default 1;
